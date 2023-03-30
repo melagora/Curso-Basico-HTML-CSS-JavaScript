@@ -1,4 +1,4 @@
-# Curso-Basico-HTML-CSS-JavaScript // Curso profesional de HTML y CSS
+# Curso-Basico-HTML-CSS-JavaScript
 
 Este curso de HTML y CSS es una introducción al mundo del desarrollo web. No solamente vas a conocer estas herramientas sino que entenderás cómo funciona un sitio web por completo.
 
