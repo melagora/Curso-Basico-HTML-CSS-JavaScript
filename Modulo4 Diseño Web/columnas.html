@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas</title>
+    <style>
+        .info{
+            columns: 4 20px;
+        }
+        .info div{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
+
+<!--
+Además de las propiedades que hemos estudiado para organizar las caja en pantalla, CSS también incluye un grupo de propiedades para facilitar la creación de columnas.
+
+column-count – Esta propiedad especifica el número de columnas que el navegador tiene que generar para distribuir el contenido del elemento. 
+
+column-width – Esta propiedad declara el ancho de las columnas. El valor se puede declarar como auto (por defecto) o en cualquiera de las unidades de CSS, como píxeles o porcentaje.
+
+column-span – Esta propiedad se aplica a elementos dentro de la caja para determinar si el elemento se ubicará en una columna o repartido entre varias columnas. Los valores disponibles son all (todas las columnas) y none (por defecto). 
+
+column-fill – Esta propiedad determina cómo se repartirá el contenido entre las columnas. Los valores disponibles son auto (las columnas son completadas de forma secuencial) y balance (el contenido se divide en partes iguales entre todas las columnas).
+
+column-gap – Esta propiedad define el tamaño del espacio entre las columnas. Acepta un valor en cualquiera de las unidades disponibles en CSS, como píxeles y porcentaje.
+
+columns – Esta propiedad nos permite declarar los valores de las propiedades columncount y column-width al mismo tiempo.
+
+column-rule-style – Esta propiedad define el estilo de la línea usada para representar la división. Los valores disponibles son hidden (por defecto), dotted, dashed, solid, double, groove, ridge, inset, y outset.
+
+column-rule-color – Esta propiedad especifica el color de la línea usada para representar la división.
+
+column-rule-width – Esta propiedad especifica el ancho de la línea usada para representar la división.
+
+column-rule – Esta propiedad nos permite definir todos los valores de la línea al mismo tiempo.
+
+-->
