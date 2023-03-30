@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS</title>
+    <style>
+        .pelota{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 100px;
+            animation: recorrido 30s infinite;
+        }
+        @keyframes recorrido{
+            25%{
+                transform: translate(500px,0px);
+            }
+            50%{
+                transform: translate(500px,500px);
+            }
+            75%{
+                transform: translate(0px,500px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        }
+
+        .corazon{
+            width: 200px;
+            margin: auto;
+            margin-top: 100px;
+            animation: escala .9s infinite;
+        }
+        .corazon img{
+            width: 100%;
+        }
+        @keyframes escala{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        .java{
+            width: 50px;
+            height: 75px;
+            background-image: url("http://s.cdpn.io/79/sprite-steps.png");
+            animation: play .8s steps(10) infinite alternate;
+        }
+        @keyframes play{
+            from{background-position: opx;}
+            to{background-position: -500px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="pelota"></div>
+    <div class="corazon">
+        <img src="IMG/corazon.png" alt="">
+    </div>
+    <div class="java"></div>
+</body>
+</html>
+
+<!--
+Cuando trabajamos con las transiciones se crea una animación pero esta es básica, solo incluye dos estados en el proceso. Si deseamos hacer una animación más completa deseamos incluir más estados, como por ejemplo los fotogramas en una película. CSS incluye las siguientes propiedades para crear animaciones más complejas.
+
+animation-name – Esta propiedad especifica el nombre usado para identificar los pasos de la animación. Podemos usar varias animaciones solo hay que separarlas por una coma.
+
+animation-duration – Esta propiedad determina la duración de cada ciclo de animación. 
+
+animation-timing-fuction – Esta propiedad determina cómo se llevará a cabo el proceso de animación por medio de una curva Bézier declara con los valores ease, linear, ease-in, ease-in, ease-out y ease-in-out.
+
+animation-delay – Esta propiedad especifica el tiempo que el navegador esperará antes de iniciar la animación.
+
+animation-iteration-count – Esta propiedad declara la cantidad de veces que se ejecutará la animación. Acepta un número entero o el valor infinite, el cual hace que la animación se ejecute por tiempo indefinido. El valor por defecto es 1. 
+
+animation-direction – Esta propiedad declara la dirección de la animación. Acepta cuatro valores: normal (por defecto), reverse, alternate, y alternate-reverse. El valor reverse invierte la dirección de la animación, mostrando los pasos en la dirección opuesta en la que se han declarado. El valor alternate mezcla los ciclos de la animación, reproduciendo los que tienen un índice impar en dirección normal y el resto en dirección invertida. Finalmente, el valor alternate-reverse hace lo mismo que alternate, pero en sentido inverso. 
+
+animation-fill-mode – Esta propiedad define cómo afecta la animación a los estilos del elemento. Acepta los valores none (por defecto), forwards, backwards, y both. El valor forwards mantiene al elemento con los estilos definidos por las propiedades aplicadas en el último paso de la animación, mientras que backwards aplica los estilos del primer paso tan pronto como se define la animación (antes de ser ejecutada). Finalmente, el valor both produce ambos efectos. 
+
+animation – Esta propiedad nos permite definir todos los valores de la animación al mismo tiempo.
+-->

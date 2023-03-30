@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones CSS</title>
+    <style>
+        .contenedor{
+            width: 300px;
+            height: 500px;
+            border: solid 1px;
+            margin: auto;
+            background-image: url(IMG/BreakingBad.jpg);
+            background-size: cover;
+        }
+
+        .vermas{
+            background-color: black;
+            height: 0px;
+            color: white;
+            padding: 10px;
+            margin-top: 360px;
+            margin-left: -1px;
+            margin-right: -1px;
+            opacity: 0;
+            transition: opacity 1s, height 1s;
+        }
+
+        .vermas p{
+            background: red;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .contenedor:hover .vermas{
+            opacity: 1;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="vermas">
+            Breaking bad es una serie de televisión dramática estadounidense creada y producida por Vince Oilligen, Breaking Bad narra la historia de Walter White.
+            <p>Ver más</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+Haciendo uso de la seudoclase :hover podemos hacer dinámicas las transformaciones que vimos en la clase anterior, solo que para poder realizar una animación real es necesario contar con una transición entre el punto 1 y el 2 del proceso. Para eso CSS nos ofrece las siguientes propiedades:
+
+transition-property – Esta propiedad especifica las propiedades que participan en la transición. Además de los nombres de las propiedades, podemos asignar el valor all para indicar que todas las propiedades participarán en la transición.
+
+transition-duration – Esta propiedad especifica la duración de la transición en segundos (s).
+
+transition-timing-function – Esta propiedad determina la función que se usa para calcular los valores para la transición. Los valores posibles son ease, ease-in, ease-out, ease-in-out, linear, step-start, y step-end.
+
+transition-delay – Esta propiedad especifica el tiempo que el navegador esperará antes de iniciar la animación.
+
+transition – Esta propiedad nos permite declarar todos los valores de la transición al mismo tiempo.
+-->

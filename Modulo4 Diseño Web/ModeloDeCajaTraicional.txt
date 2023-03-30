@@ -1,0 +1,7 @@
+En las clases anteriores vimos los elementos block que se posicionan en una sola liena con un salto de linea, y los elementos inline que se todos en la misma liena de izquierda a derecha sin saltos de línea. Todo esto es diferente cuando usamos el modelo de cada tradicional. 
+
+El modelo de caja tradicional establece que los elementos pueden flotar a cada lado de la ventana y compartir espacio en la misma línea con otros elementos, sin importar su tipo.  Por ejemplo, si tenemos dos elementos Block que representan columnas en el diseño, podemos posicionar una columna a la izquierda y la otra columna a la derecha haciendo que los elementos floten hacia el lado que queremos.
+
+float – Esta propiedad permite a un elemento flotar hacia un lado u otro, y ocupar el espacio disponible, incluso cuando tiene que compartir la línea con otro elemento. Los valores disponibles son none (el elemento no flota), left (el elemento flota hacia la izquierda) y right (el elemento flota hacia la derecha)
+
+clear – Esta propiedad restaura el flujo normal del documento, y no permite que el elemento siga flotando hacia la izquierda, la derecha o ambos lados. Los valores disponibles son none, left, right, y both (ambos).

@@ -1,0 +1,39 @@
+
+
+section{
+    background-color: black;
+}
+
+section div{
+    width: 500px;
+    height: 200px;
+    overflow: auto;
+    margin: auto;
+    padding: 25px;
+}
+
+#uno{
+    background-color: blue;
+}
+
+#dos{
+    background-color: green;
+}
+
+/*
+width— Esta propiedad declara el ancho de un elemento. El valor se puede especificar en píxeles, porcentaje, o con la palabra clave auto (por defecto). Cuando el valor se especifica en porcentaje, el ancho se calcula según el navegador a partir del ancho del contenedor, y cuando se declara con el valor auto, el elemento se expande hasta ocupar todo el espacio horizontal disponible dentro del contenedor.
+
+height— Esta propiedad declara la altura de un elemento. El valor se puede especificar en píxeles, porcentaje, o con la palabra clave auto (por defecto). Cuando el valor se especifica en porcentaje, el navegador calcula la altura a partir de la altura del contenedor, y cuando se declara con el valor auto, el elemento adopta la altura de su contenedor.
+
+overflow— Esta propiedad especifica cómo se mostrará el contenido que desborda el elemento. Los valores disponibles son visible (por defecto), hidden (esconde el contenido que no entra dentro de la caja), scroll (muestra barras laterales para desplazar el contenido), auto (deja que el navegador decida qué hacer con el contenido).
+
+overflow-x— Esta propiedad especifica cómo se mostrará el contenido que desborda el elemento horizontalmente. Acepta los mismos valores que la propiedad overflow.
+
+overflow-y— Esta propiedad especifica cómo se mostrará el contenido que desborda el elemento verticalmente. Acepta los mismos valores que la propiedad overflow.
+
+overflow-wrap— Esta propiedad indica si un palabra debería ser dividida en un punto arbitrario cuando no hay suficiente espacio para mostrarla en la línea. Los valores disponibles son normal (la línea será dividida naturalmente) y break-word (las palabras se dividirán en puntos arbitrarios para acomodar la línea de texto en el espacio disponible).
+
+margin— Esta propiedad declara el margen de un elemento. El margen es el espacio que hay alrededor de la caja. Puede recibir cuatro valores que representan el margen superior, derecho, inferior, e izquierdo, en ese orden y separados por un espacio (por ejemplo, margin: 10px 30px 10px 30px;). Sin embargo, si sólo se declaran uno, dos o tres valores, los otros toman los mismos valores (por ejemplo, margin: 10px 30px asigna 10 píxeles al margen superior e inferior y 30 píxeles al margen izquierdo y derecho). Los valores se pueden declarar independientemente usando las propiedades asociadas margin-top, margin-right, margin-bottom y margin-left (por ejemplo, marginleft: 10px;). La propiedad también acepta el valor auto para obligar al navegador a calcular el margen (usado para centrar un elemento dentro de su contenedor).
+
+padding—Esta propiedad declara el relleno de un elemento. El relleno es el espacio entre el contenido del elemento y los límites de su caja. Los valores se declaran de la misma forma que lo hacemos para la propiedad margin, aunque también se pueden declarar de forma independiente con las propiedades padding-top, padding-right, paddingbottom y padding-left (por ejemplo, padding-top: 10px;).
+*/

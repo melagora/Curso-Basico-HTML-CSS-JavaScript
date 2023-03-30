@@ -1,0 +1,14 @@
+h1{
+    color: red;
+}
+
+/*
+rgb (rojo, verde, azul)— Esta función define un color por medio de los valores especificados por los atributos (desde 0 a 255). El primer valor representa el nivel de rojo, el segundo valor representa el nivel de verde y el último valor el nivel de azul (por ejemplo, rgb(153, 102, 51)).
+
+rgba(rojo, verde, azul, alfa)— Esta función es similar a la función rgb(), pero incluye un componente adicional para definir la opacidad (alfa). El valor se puede declarar entre 0 y 1, con 0 como totalmente transparente y 1 como totalmente opaco.
+
+hsl(matiz, saturación, luminosidad)— Esta función define un color desde los valores especificados por los atributos. Los valores se declaran en números decimales y porcentajes.
+
+hsla(matiz, saturación, luminosidad, alfa)— Esta función es similar a la función hsl(), pero incluye un componente adicional para definir la opacidad (alfa). El valor se puede declarar entre 0 y 1, con 0 como totalmente transparente y 1 como totalmente opaco. 
+
+*/

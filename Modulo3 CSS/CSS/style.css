@@ -1,0 +1,63 @@
+/*p, li{
+    background-color: black;
+    color: aliceblue;
+}
+
+header p{
+    background-color: blue;
+    color: black;
+}
+
+section > p{
+    background-color: greenyellow;
+    color: black;
+}
+
+h2 + li{
+    background-color: chocolate;
+
+}
+
+#principal{
+    border: solid 2px black;
+}
+
+.arial{
+    font-family: Arial;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}*/
+
+*{
+    font-family: Arial, Verdana;
+}
+
+.verdana{
+    font-family: Verdana;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: justify;
+}
+
+p{
+    /*font: bold 17px Thahoma;*/
+    font-size: 17px;
+    font-style: italic;
+}
+
+#texto{
+    /*text-align-last: right;*/
+    text-indent: 10px; /*Sangría*/
+    line-height: 20px 
+}
+
+#texto img{
+    vertical-align: text-top;
+}
+
+#texto a{
+    text-decoration: line-through;
+}

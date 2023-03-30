@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Absoluto</title>
+    <style>
+        .caja{
+            width: 200px;
+            margin: auto;
+        }
+        .caja:hover .footer{
+            opacity: .8;
+        }
+        .header img{
+            width: 100%;
+            border: solid 2px;
+        }
+        .footer{
+            width: 200px;
+            background: white;
+            opacity: 0;
+            height: auto;
+            position: relative;
+            border: solid 2px;
+            text-align: center;
+            top: -58px;
+            transition: opacity .4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+        <div class="header">
+            <img src="img/montanas.jpg" alt="">
+        </div>
+        <div class="footer">
+            <p>Este es un fondo</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--
+La posición de un elemento puede ser relativa o absoluta. Con una posición es relativa, las cajas se colocan una después de la otra en el espacio designado por el contenedor. Si el espacio no es suficiente o los elementos no son flotantes, las cajas se colocan en una nueva línea. Este es el modo de posicionamiento por defecto, pero existe otro modo llamado posicionamiento absoluto. El posicionamiento absoluto nos permite especificar las coordenadas exactas en las que queremos posicionar cada elemento. Las siguientes son las propiedades disponibles para este propósito.
+
+position – Esta propiedad define el tipo de posicionamiento usado para colocar un elemento. Los valores disponibles son static (se posiciona de acuerdo con el flujo normal del documento), relative (se posiciona según la posición original del elemento), absolute (se posiciona con una posición absoluta relativa al contenedor del elemento), y fixed (se posiciona con una posición absoluta relativa a la ventana del navegador). 
+
+top – Esta propiedad especifica la distancia entre el margen superior del elemento y el margen superior de su contenedor.
+
+bottom – Esta propiedad especifica la distancia entre el margen inferior del elemento y el margen inferior de su contenedor. 
+
+left – Esta propiedad especifica la distancia entre el margen izquierdo del elemento y el margen izquierdo de su contenedor.
+
+right – Esta propiedad especifica la distancia entre el margen derecho del elemento y el margen derecho de su contenedor.
+
+z-index – Esta propiedad define un índice que determina la posición del elemento en el eje z. El elemento con el índice más alto se dibujará sobre el elemento con el índice más bajo.
+-->

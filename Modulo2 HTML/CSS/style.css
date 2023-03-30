@@ -1,0 +1,18 @@
+#boton{
+    background: green;
+    color: white;
+}
+
+.programacion{
+    color: red;
+}
+
+.baseDeDatos{
+    color: blue;
+}
+
+.contenedor{
+    background-color: darkgray;
+    text-align: center;
+
+}

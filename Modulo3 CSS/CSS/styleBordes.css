@@ -1,0 +1,41 @@
+/*
+border-width – Esta propiedad define el ancho del borde. Acepta hasta cuatro valores separados por un espacio para especificar el ancho de cada lado del borde (superior, derecho, inferior, e izquierdo, es ese orden). También podemos declarar el ancho para cada lado de forma independiente con las propiedades border-top-width, borderbottom-width, border-left-width, y border-right-width.
+
+border-style – Esta propiedad define el estilo del borde. Acepta hasta cuatro valores separados por un espacio para especificar los estilos de cada lado del borde (superior, derecho, inferior, e izquierdo, en ese orden). Los valores disponibles son none, hidden, dotted, dashed, solid, double, groove, ridge, inset, y outset. El valor por defecto es none, lo que significa que el borde no se mostrará a menos que asignemos un valor diferente a esta propiedad. También podemos declarar los estilos de forma independiente con las propiedades border-top-style, border-bottom-style, border-leftstyle, y border-right-style.
+
+border-color – Esta propiedad define el color del borde. Acepta hasta cuatro valores separados por un espacio para especificar el color de cada lado del borde (superior, derecho, inferior, e izquierdo, en ese orden). También podemos declarar los colores de forma independiente con las propiedades border-top-color, border-bottom-color, border-left-color, y border-right-color.
+
+border – Esta propiedad nos permite declarar todos los atributos del borde al mismo tiempo. También podemos usar las propiedades border-top, border-bottom, borderleft, y border-right para definir los valores de cada borde de forma independiente.
+
+El borde agregado con estas propiedades se dibuja alrededor de la caja del elemento, lo que significa que va a describir un rectángulo con esquinas rectas. Si nuestro diseño requiere esquinas redondeadas, podemos agregar la siguiente propiedad.
+
+border-radius – Esta propiedad define el radio del círculo virtual que el navegador utilizará para dibujar las esquinas redondeadas. Acepta hasta cuatro valores para definir los radios de cada esquina (superior izquierdo, superior derecho, inferior derecho e inferior izquierdo, en ese orden). También podemos usar las propiedades border-top-leftradius, border-top-right-radius, border-bottom-right-radius, y borderbottom-left-radius para definir el radio de cada esquina de forma independiente.
+
+Los bordes que acabamos de crear se dibujan en los límites de la caja del elemento, pero también podemos demarcar el elemento con un segundo borde que se dibuja alejado de esto límites. El propósito de estos tipos de bordes es resaltar el elemento. Algunos navegadores lo usan para demarcar texto, pero la mayoría dibuja un segundo borde fuera de los límites de la caja. CSS ofrece las siguientes propiedades para crear este segundo borde.
+
+outline-width – Esta propiedad define el ancho del borde. Acepta valores en cualquiera de las unidades disponibles en CSS (px, %, em, etc.) y también las palabras clave thin, medium, y thick.
+
+outline-style – Esta propiedad define el estilo del borde. Los valores disponibles son none, auto, dotted, dashed, solid, double, groove, ridge, inset, y outset.
+
+outline-color – Esta propiedad define el color del borde.
+
+outline-offset – Esta propiedad define el desplazamiento (a qué distancia de los límites de la caja se dibujará el segundo borde). Acepta valores en cualquiera de las unidades disponibles en CSS (px, %, em, etc.).
+
+outline – Esta propiedad nos permite especificar el ancho, estilo y color del borde al mismo tiempo (el desplazamiento aún se debe definir con la propiedad outline-offset).
+
+Los efectos logrados por las propiedades border y outline se limitan a simples líneas y unas pocas opciones de configuración, pero CSS nos permite definir bordes personalizados usando imágenes para superar estas limitaciones. Las siguientes son las propiedades que se incluyen con este propósito.
+
+border-image-source – Esta propiedad determina la imagen que se usará para crear el borde. La URL del archivo se declara con la función url() (por ejemplo, url(“ladrillos.jpg”)).
+
+border-image-width – Esta propiedad define el ancho del borde. Acepta valores en cualquiera de las unidades disponibles en CSS (px, %, em, etc.).
+
+border-image-repeat – Esta propiedad define cómo se usa la imagen para generar el borde. Los valores disponibles son repeat, round, stretch, y space.
+
+border-image-slice – Esta propiedad define cómo se va a cortar la imagen para representar las esquinas del borde. Debemos asignar cuatro valores para especificar los cuatro trozos de la imagen que se utilizarán (si solo se declara un valor, se usa para todos los lados). El valor se puede especificar como un entero o en porcentaje.
+
+border-image-outset  – Esta propiedad define el desplazamiento del borde (la distancia a la que se encuentra de la caja del elemento). Acepta valores en cualquiera de las unidades disponibles en CSS (px, %, em, etc.).
+
+border-image – Esta propiedad nos permite especificar todos los atributos del borde al mismo tiempo.
+
+
+*/
